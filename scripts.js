@@ -49,3 +49,12 @@ let let2;
 console.log(let2)
 let2 = 5;
 //undefined
+
+//#3: Explain Implicit Type Coercion in javascript.
+//Implicit type coercion is when there an automatic conversion of value from one data type to another. This takes place when the operands of an expressions are of different data types. 
+
+let stringCoercionX = 3;
+let stringCoercionY = "3";
+console.log(stringCoercionX + stringCoercionY);
+//33
+
