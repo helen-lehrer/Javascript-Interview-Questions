@@ -58,3 +58,26 @@ let stringCoercionY = "3";
 console.log(stringCoercionX + stringCoercionY);
 //33
 
+//#4: Explain passed by value and passed by reference.
+
+let primitiveTypeX = 234;
+let primitiveTypeY = primitiveTypeX;
+console.log("New memory allocated: " + primitiveTypeY);
+primitiveTypeY = 300;
+console.log("primitive type Y after Y is reassigned: " + primitiveTypeY);
+console.log("primitive type X after Y is reassigned (It doesn't change): " + primitiveTypeX);
+
+//when the value of primitiveTypeY is assigned to primtiveTypeX, new space in the memory is allocated. primitiveTypeY is not pointing to the location of primitiveTypeX, it is pointing to a new location.
+//primitive data types are passed by value.
+
+let obj = { name: "Vivek", surname: "Bisht" };
+let  obj2 = obj;
+obj2.name = "Sarah";
+console.log(obj2);
+console.log(obj);
+
+//both objects have the value of "Sarah" for the key "name".
+//non-primitive data types are always passed by reference
+
+
+
